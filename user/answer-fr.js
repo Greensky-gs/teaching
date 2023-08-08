@@ -64,6 +64,9 @@ class Utilisateur {
         const max = 3;
         const min = 0;
 
+        // On fait en sorte que level soit un nombre entier
+        level = Math.floor(level);
+
         // On modifie subLevel
         this.subLevel = 
             // Dans le cas où le paramètre est supérieur au maximum, on laisse au maximum
